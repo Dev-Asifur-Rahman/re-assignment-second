@@ -24,11 +24,13 @@ body {
   font-size: 3rem;
   font-weight: 900;
   color: var(--heading-color);
+  text-align: center;
 }
 .common-text {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
+  text-align: center;
 }
 .heading-text{
   margin: 10px 0px;
