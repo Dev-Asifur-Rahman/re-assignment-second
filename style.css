@@ -327,6 +327,46 @@ input::placeholder {
 .habit-div > img {
   border-radius: 50%;
 }
+/* mail us section  */
+.mail-section{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.field-class{
+  width: 60%;
+  padding: 25px 20px;
+  display: flex;
+  border: 2px solid wheat;
+  width: 70%;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items:center;
+  gap: 18px;
+}
+
+.field-class > input {
+  width: 450px;
+  height: 30px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  padding: 8px;
+  color: #ffffff99;
+  cursor: pointer;
+}
+.text-area{
+  width: 450px;
+  height: 200px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+.field-class>input[type="submit"]{
+  background-color: #e2523c;
+  color: white;
+  height: 40px;
+}
 /* for small screen  */
 @media screen and (max-width: 576px) {
   /* nav section  */
@@ -440,6 +480,46 @@ input::placeholder {
   }
   .habit-div > img {
     border-radius: 12px;
-    width: 100% ;
+    width: 100%;
+  }
+  /* mail us section  */
+  .mail-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .field-class{
+    width: 40%;
+    /* padding: 25px 20px; */
+    display: flex;
+    border: 2px solid wheat;
+    width: 70%;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items:center;
+    gap: 18px;
+  }
+  
+  .field-class > input {
+    width: 95%;
+    height: 30px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 8px;
+    color: #ffffff99;
+    cursor: pointer;
+  }
+  .text-area{
+    width: 97%;
+    height: 200px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-color);
+  }
+  .field-class>input[type="submit"]{
+    background-color: #e2523c;
+    color: white;
+    height: 40px;
   }
 }
