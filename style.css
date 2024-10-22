@@ -66,7 +66,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
 }
 nav > ul li {
   width: 140px;
@@ -75,7 +74,7 @@ nav > ul li {
 .link-one {
   border-radius: 12px;
   background: #e9381d;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 .miama {
   font-family: Miama;
@@ -83,29 +82,34 @@ nav > ul li {
   font-weight: 400;
   font-size: 5rem;
 }
-header{
-  background: linear-gradient(180deg, rgb(17, 17, 17), rgba(119, 119, 119, 0) 100%);
+header {
+  background: linear-gradient(
+    180deg,
+    rgb(17, 17, 17),
+    rgba(119, 119, 119, 0) 100%
+  );
 }
-.banner{
+.banner {
   margin: 30px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
 }
-.banner-div1,.banner-div2{
+.banner-div1,
+.banner-div2 {
   width: 100%;
   height: 500px;
 }
-.banner-div2{
+.banner-div2 {
   position: relative;
 }
 
-.banner-div2>img{
+.banner-div2 > img {
   width: 40%;
   height: 100%;
 }
-.video-div1{
+.video-div1 {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 10px;
   padding: 5px 8px;
@@ -113,7 +117,7 @@ header{
   top: 25%;
   right: 53%;
 }
-.video-div2{
+.video-div2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -125,7 +129,7 @@ header{
   bottom: 28%;
   left: -3%;
 }
-.banner-div1{
+.banner-div1 {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -133,21 +137,22 @@ header{
   gap: 20px;
 }
 
-.banner-heading{
+.banner-heading {
   color: var(--heading-color);
   font-weight: 800;
   font-size: 5rem;
 }
-.banner-text{
+.banner-text {
   color: var(--text-color);
   font-weight: 400;
   font-size: 1.5rem;
 }
-.banner-btn{
+.banner-btn {
   height: 40px;
   width: 170px;
+  margin: 5px;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   border-radius: 2.5rem;
   border: 1px solid rgb(255, 255, 255);
   cursor: pointer;
@@ -155,26 +160,69 @@ header{
   margin-right: 8px;
 }
 /* footer section  */
-.footer-grid{
+.footer-grid {
   padding: 10px 15px;
   margin: 10px 15px;
   display: grid;
-  grid-template-columns: repeat(3,1fr);
+  grid-template-columns: repeat(3, 1fr);
   place-items: center;
 }
-.align-start{
+.align-start {
   align-self: flex-start;
 }
-footer .footer-grid ul li{
+footer .footer-grid ul li {
   font-size: 1rem;
   font-weight: 400;
   color: var(--text-color);
   margin: 5px 0;
 }
-.hr-tag{
+.hr-tag {
   color: var(--text-color);
   width: 98%;
   margin: 12px 0 12px 0;
+}
+/* meet team section  */
+.meet-team-main {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+}
+.meet-team {
+  width: 100%;
+  padding: 25px 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 300px);
+  row-gap: 40px;
+}
+.person-section {
+  width: 100%;
+  border-radius: 16px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.person-section > img {
+  width: 90%;
+  height: 100%;
+  border-radius: 16px;
+}
+.introduction {
+  position: absolute;
+  bottom: 8%;
+  left: 10%;
+}
+.meet-name {
+  color: var(--heading-color);
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.profession {
+  color: var(--text-color);
+  font-weight: 400;
+  font-size: 1rem;
 }
 /* for small screen  */
 @media screen and (max-width: 576px) {
@@ -182,43 +230,47 @@ footer .footer-grid ul li{
   .menu-icon {
     display: block;
   }
-  nav ul{
+  nav ul {
     display: none;
   }
-  .banner{
+  .banner {
     margin: 10px auto;
     flex-direction: column;
   }
-  .banner-div1{
+  .banner-div1 {
     height: auto;
   }
-  .banner-heading{
+  .banner-heading {
     font-size: 4rem;
   }
-  .banner-div2{
+  .banner-div2 {
     text-align: center;
     height: 300px;
   }
-  .video-div1{
+  .video-div1 {
     top: 10%;
     right: 7%;
   }
-  .video-div2{
+  .video-div2 {
     bottom: 21%;
     left: 10%;
   }
   /* footer section  */
-  .footer-grid{
-    grid-template-columns: repeat(1,1fr);
+  .footer-grid {
+    grid-template-columns: repeat(1, 1fr);
     place-items: start;
     row-gap: 10px;
   }
-  .hr-tag{
+  .hr-tag {
     color: var(--text-color);
     width: 80%;
     margin: 12px 0 12px 0;
   }
+  /* meet team section  */
+  .meet-team {
+    width: 100%;
+    padding: 25px 0;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 30px;
+  }
 }
-
-
-
