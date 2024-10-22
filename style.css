@@ -33,7 +33,8 @@ body {
   text-align: center;
 }
 .heading-text {
-  margin: 10px 0px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -225,24 +226,79 @@ footer .footer-grid ul li {
   font-size: 1rem;
 }
 /* bmi section  */
-.bmi-section{
- display: flex;
+.bmi-section {
+  display: flex;
 }
-.bmi-table{
+.bmi-div {
+  width: 40%;
+  padding: 40px 0 40px 40px;
+}
+.bmi-heading {
+  color: var(--heading-color);
+  font-size: 1.5rem;
+  font-weight: 900;
+  margin-bottom: 35px;
+}
+.bmi-table {
   border-collapse: collapse;
   width: 70%;
   height: 150px;
 }
-.bmi-table td{
+.bmi-table td {
   color: var(--text-color);
   font-size: 0.8rem;
   font-weight: 400;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  padding-left: 5% ;
+  padding-left: 5%;
 }
-.bmi-input{
+.bmi-input {
   width: 60%;
-  border: 2px solid white;
+  padding: 40px 0 40px 40px;
+}
+.input-div {
+  width: 85%;
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 40px);
+  grid-gap: 8px;
+}
+.input-div input {
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  border-radius: 0.5rem;
+  padding: 8px;
+  color: #ffffff99;
+}
+input::placeholder {
+  color: #ffffff99;
+}
+/* run section  */
+.run-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.run-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.run-heading {
+  color: var(--heading-color);
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+.run-description {
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 400;
+}
+.run-section > img {
+  width: 400px;
+  height: 300px;
+  border-radius: 18px;
 }
 /* for small screen  */
 @media screen and (max-width: 576px) {
@@ -292,5 +348,49 @@ footer .footer-grid ul li {
     padding: 25px 0;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 30px;
+  }
+  /* bmi section  */
+  .bmi-section {
+    flex-direction: column;
+    padding-bottom: 30px;
+  }
+  .bmi-div {
+    padding: 10px 5px;
+    width: 90%;
+    margin-left: 8px;
+    margin-top: 16px;
+  }
+  .bmi-table {
+    width: 100%;
+  }
+  .bmi-input {
+    width: 100%;
+    padding: 0;
+    margin-top: 16px;
+    margin-left: 8px;
+  }
+  .input-div {
+    width: 90%;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(3, 40px);
+    justify-content: start;
+  }
+  /* run section  */
+  .run-section {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .run-text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  .run-section > img {
+    width: 100%;
+    height: 300px;
+    border-radius: 18px;
   }
 }
