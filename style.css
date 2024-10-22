@@ -16,7 +16,6 @@
 body {
   background: black;
   margin: 15px 25px;
-  border: 2px solid white;
 }
 
 /* common heading and text  */
@@ -300,6 +299,34 @@ input::placeholder {
   height: 300px;
   border-radius: 18px;
 }
+/* habit section  */
+.habit-section {
+  display: flex;
+  margin: 25px 0;
+  padding: 15px;
+}
+.habit-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  padding: 15px 10px;
+}
+.habit-head {
+  color: var(--heading-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+.habit-text {
+  color: var(--text-color);
+  font-size: 0.8rem;
+  font-weight: 400;
+  text-align: center;
+}
+.habit-div > img {
+  border-radius: 50%;
+}
 /* for small screen  */
 @media screen and (max-width: 576px) {
   /* nav section  */
@@ -392,5 +419,27 @@ input::placeholder {
     width: 100%;
     height: 300px;
     border-radius: 18px;
+  }
+  .habit-section {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .habit-div {
+    padding: 0 0;
+  }
+  .habit-head {
+    color: var(--heading-color);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  .habit-text {
+    color: var(--text-color);
+    font-size: 0.8rem;
+    font-weight: 400;
+    text-align: center;
+  }
+  .habit-div > img {
+    border-radius: 12px;
+    width: 100% ;
   }
 }
